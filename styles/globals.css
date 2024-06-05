@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.masonry-wrapper {
+  width: 100%;
+  column-count: 2;
+}
+
+.masonry {
+  break-inside: avoid;
+}
+
+@media screen and (min-width: 640px) {
+  .masonry-wrapper {
+    column-count: 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .masonry-wrapper {
+    column-count: 3;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .masonry-wrapper {
+    column-count: 4;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .masonry-wrapper {
+    column-count: 6;
+  }
+}
+
+@media screen and (min-width: 2048px) {
+  .masonry-wrapper {
+    column-count: 8;
+  }
+}
